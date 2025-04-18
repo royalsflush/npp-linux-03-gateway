@@ -1,0 +1,20 @@
+all:
+  children:
+    bridge:
+      hosts:
+        clab-mod3-2ext2int-br-ext:
+          ansible_host: 
+        clab-mod3-2ext2int-br-int:
+          ansible_host: 
+    linux:
+      hosts:
+        clab-mod3-2ext2int-ext1:
+          ansible_host: 172.20.20.3
+        clab-mod3-2ext2int-ext2:
+          ansible_host: 172.20.20.4
+        clab-mod3-2ext2int-gw:
+          ansible_host: 172.20.20.5
+        clab-mod3-2ext2int-int1:
+          ansible_host: 172.20.20.6
+        clab-mod3-2ext2int-int2:
+          ansible_host: 172.20.20.2
